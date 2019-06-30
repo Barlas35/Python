@@ -1,0 +1,30 @@
+vize1=int(input('Vize 1 Notunuzu Girin :'))
+vize2=int(input("Vize 2 Notunuz Girin :"))
+Final=int(input('Final Notunuzu Girin :'))
+
+işlem=((vize1*0.3)+(vize2*0.3)+(Final*0.4))
+
+if (Final<=39):
+    print('Puanınız : {}\nBaşarısız Harf Notunuz : FF '.format(işlem))
+
+elif (işlem >=90):
+    print('Puanınız : {}\nHarf Notunuz AA.'.format(işlem))
+
+elif (işlem >= 80):
+    print('Puanınız : {}\nHarf Notunuz BA.'.format(işlem))
+
+elif (işlem >= 70):
+    print('Puanınız : {}\nHarf Notunuz BB.'.format(işlem))
+
+elif (işlem <= 49):
+    print('Puanınız : {}\nHarf Notunuz FF.'.format(işlem))
+
+elif (işlem >= 50):
+    print('Puanınız : {}\nHarf Notunuz CC.'.format(işlem))
+
+
+
+
+
+
+
