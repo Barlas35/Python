@@ -1,0 +1,18 @@
+print('Uludağ Otomasyona Hoşgeldiniz...')
+
+ad=str(input('Kullanıcı Adı:'))
+
+soyad=str(input('Kullanıcı Soyadı:'))
+
+numara=int(input('Kullanıcı No:'))
+
+şifre=int(input('Kullanıcı Şifre:'))
+
+
+liste=[ad,soyad,numara,şifre]
+
+print('veriler işleniyor....')
+
+
+print('Kullanıcı adı: {}\n Kullanıcı soyadı: {}\n  Kullanıcı No: {}\n   Kullanıcı Şifre: {}\n '.format(liste[0],liste[1],liste[2],liste[3]))
+print('Sisteme Giriş Başarılı...')
