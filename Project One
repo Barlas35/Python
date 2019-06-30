@@ -1,0 +1,19 @@
+print('**********Facebook a Hoş Geldiniz**********')
+
+sys_ad='Barlas'
+sys_şifre='12345'
+
+Kullanıcı_adı=input('Kullanıcı adı giriniz :')
+Şifre=input('Şifre giriniz :')
+
+if (Kullanıcı_adı != sys_ad and Şifre == sys_şifre):
+    print('Kullanıcı adı hatalı...')
+
+elif (Kullanıcı_adı == sys_ad and Şifre != sys_şifre):
+    print('Şifre hatalı...')
+
+
+elif(Kullanıcı_adı != sys_ad and Şifre != sys_şifre):
+    print ('Kullanıcı adı ve Şifre Hatalı')
+else:
+    print('sisteme Hoşgeldin...')
