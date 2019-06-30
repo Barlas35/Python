@@ -1,0 +1,22 @@
+print('*****Boy Kilo Endeksi Hesaplama v2*****')
+
+boy=float(input('Boyunuzu metre cinsinden girin :'))
+kilo=int(input('Kilonuzu Girin :'))
+
+
+
+
+if (kilo/(boy**2) <= 18.5):
+    print('Boy Kilo endeksiniz {} dır\n Zayıfsınız'.format (kilo/(boy**2)))
+
+if (25 >= kilo / (boy ** 2) >= 18.5):
+    print('Boy Kilo endeksiniz {} dır\n Normalsiniz'.format(kilo / (boy ** 2)))
+
+if (30 >= kilo / (boy ** 2) >= 25):
+    print('Boy Kilo endeksiniz {} dır\n Fazla Kilolusunuz'.format(kilo / (boy ** 2)))
+
+if (kilo / (boy ** 2) >= 30):
+    print('Boy Kilo endeksiniz {} dır\n Obezsiniz'.format(kilo / (boy ** 2)))
+
+
+
