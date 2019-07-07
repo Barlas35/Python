@@ -1,0 +1,28 @@
+print("'Welcome to Kingsman' Please enter Usename & Password: ")
+
+sys_username = 'Barlas35'
+sys_password = '112233'
+rigth_of_entry=3
+
+while True:
+    us=(input('Username: '))
+    pas=(input('Password: '))
+
+    if (sys_username != us and sys_password == pas):
+        print('Username is False..')
+        rigth_of_entry -= 1
+        print ('Entry is:', rigth_of_entry)
+    elif (sys_username == us and sys_password != pas):
+        print('Password is False...')
+        rigth_of_entry -= 1
+        print ('Entry is:', rigth_of_entry)
+    elif(sys_username != us and sys_password != pas):
+        print('Username and Password is False...')
+        rigth_of_entry -= 1
+        print ('Entry is:', rigth_of_entry)
+    else:
+        print('Welcome to System...')
+
+    if (rigth_of_entry == 0):
+        print('accses denide')
+        break
