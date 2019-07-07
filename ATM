@@ -1,0 +1,41 @@
+print("""
+      atm MAkinesine Hoşgeldiniz
+
+  İşlemler:
+
+  1. Bakiye Sorgulama
+  2. Para yatırma
+  3. Para Çekme
+
+  Programdan Çıkmak İçin Q ya basın.
+""")
+
+bakiye = 10000
+
+while True:
+    işlem=input('İşlemi seçiniz: ')
+
+    if (işlem=='q'):
+        print('Kartınız unutmayınız...')
+        break
+    elif(işlem=='1'):
+        print('Bakiyeniz: ',bakiye)
+
+    elif (işlem=='2'):
+        miktar=int(input('Yatırılacak tutarı giriniz: '))
+
+        bakiye+=miktar
+        print('Para yatırma işleminiz Tamamlanmıştır. Yeni Bakiyeniz:{} TL dir.'.format (bakiye))
+
+    elif (işlem=='3'):
+
+        miktar1=int(input('Çekmek istediğiniz tutarı giriniz: '))
+
+
+        if (bakiye - miktar1 < 0):
+            print("Bu kadar para çekemezsiniz...")
+            print("Bakiyeniz {} tldir".format(bakiye))
+            continue
+        bakiye -= miktar1
+        print('Para Çekme İşlemi başarıyla Gerçekleşmiştir. Yeni Bakiyeniz: {} TL dir.' .format (bakiye))
+
