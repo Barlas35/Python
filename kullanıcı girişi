@@ -1,4 +1,4 @@
-print('**********Facebook a Hoş Geldiniz**********')
+print('**********sisteme a Hoş Geldiniz**********')
 
 sys_ad='Barlas'
 sys_şifre='12345'
