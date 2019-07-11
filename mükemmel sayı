@@ -1,0 +1,17 @@
+print('mükemmel sayı hesaplama programına hoş geldins')
+
+sayı=int(input('sayı gir : '))
+
+x=1
+y=0
+
+while (x<sayı):
+    if (sayı % x ==0):
+        y += x
+    x += 1
+
+if (sayı==y):
+    print('{} sayısı mükemmel sayıdır.'.format(sayı))
+
+else:
+    print('{} sayısı mükemmel sayı değil'.format(sayı))
