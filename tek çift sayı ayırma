@@ -1,0 +1,21 @@
+print('****************************************')
+liste=[1,2,3,4,543,211,345,66,789754]
+x=0
+y=0
+for eleman in liste:
+    if (eleman%2==0):
+        x=x+1
+        print(eleman)
+print('{} tane çift sayı var'.format(x))
+print('****************************************')
+
+for eleman in liste:
+    if (eleman%2==1):
+        y=y+1
+        print(eleman)
+        
+       
+        
+
+print('{} tane tek sayı var'.format(y))
+print('****************************************')
